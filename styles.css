@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -7,8 +9,8 @@
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 800px 1fr;
-    grid-template-rows: 1fr 800px 1fr;
+    grid-template-columns: 1fr 550px 1fr;
+    grid-template-rows: 1fr 500px 1fr;
     grid-gap: 10px;
     grid-template-areas: 
     ".   title   ."
@@ -18,7 +20,9 @@
 
 #button{
     grid-area: button;
-    margin: 10% ;
+    display: grid;
+    place-items: center;
+    padding-bottom: 5%;
 }
 
 #title {
@@ -42,4 +46,35 @@
 
 .color{
     border: 1px solid grey;
+}
+
+
+button {
+    padding: 15px 20px;
+    border-radius: 50px;
+    border-width: 0px;
+    font-family:  "Open Sans Condensed", sans-serif;
+    font-size: 20px;
+    box-shadow: 0px 5px 10px 2px dimgray;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: lightgray;
+    outline: none;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
 }
